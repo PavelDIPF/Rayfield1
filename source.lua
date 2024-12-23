@@ -949,9 +949,9 @@ local function Hide(notify: boolean?)
 	Debounce = true
 	if notify then
 		if useMobilePrompt then 
-			RayfieldLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping 'Show Rayfield'.", Duration = 7, Image = 4400697855})
+			RayfieldLibrary:Notify({Title = "Интерфейс скрыт", Content = "Интерфейс был скрыт, чтобы показать его снова, нажмите 'Показать Rayfield'.", Duration = 7, Image = 4400697855})
 		else
-			RayfieldLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping K.", Duration = 7, Image = 4400697855})
+			RayfieldLibrary:Notify({Title = "Интерфейс скрыт", Content = "Интерфейс был скрыт, нажмите K, чтобы показать его снова. 🔑", Duration = 7, Image = 4400697855})
 		end
 	end
 
@@ -1523,7 +1523,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 						if writefile then
 							writefile(RayfieldFolder.."/Key System".."/"..Settings.KeySettings.FileName..ConfigurationExtension, FoundKey)
 						end
-						RayfieldLibrary:Notify({Title = "Key System", Content = "The key for this script has been saved successfully.", Image = 3605522284})
+						RayfieldLibrary:Notify({Title = "Key System", Content = "Ключ для этого скрипта был успешно сохранен.", Image = 3605522284})
 					end
 				else
 					if AttemptsRemaining == 0 then
